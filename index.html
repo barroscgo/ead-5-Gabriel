@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cadastro de Usuários</title>
+</head>
+<body>
+    <div class="container">
+        <button id="navegateBtn" onclick="window.location.href='./pagina/contato.html'">Ir para a Tela de Contato</button>
+        <h1>Cadastro de Usuários</h1>
+        <main>
+            <label for="nomeUsuario">Nome:</label>
+            <input type="text" id="nomeUsuario" required placeholder="Informe o nome do usuário aqui."> <br>
+
+            <label for="emailUsuario">Email:</label>
+            <input type="email" id="emailUsuario" required placeholder="Informe o email do usuário aqui."> <br>
+
+            <button id="addUserBtn" onclick="adicionarUsuario()">Adicionar</button>
+
+            <h6>Usuários Cadastrados</h6>
+            <ul id="listaUsers"></ul>
+        </main>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
